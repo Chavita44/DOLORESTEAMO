@@ -1,33 +1,50 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TE AMO</title>
-</head>
-<body>
     <style>
-        body{
-            background-color: rgb(126, 181, 24);
+        * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
         }
-        .Txt1{
-            position: absolute;
-            top: 60%;
-            left: 25%;
+
+        body {
+        background-color: rgb(126, 181, 24);
+        font-family: sans-serif;
+        height: 100vh; /* ocupa toda la pantalla */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        overflow: hidden; /* evita scroll */
         }
-        .Img1{
-            position: absolute;
-            top: 10px;
-            left: 40%;
-            width: 300px;
-            height: auto;
+
+        .Img1 {
+        max-height: 40vh;
+        max-width: 80vw;
+        height: auto;
+        margin-bottom: 2vh;
+        }
+
+        .Txt1 {
+        font-size: 2.5vw;
+        color: white;
+        padding: 0 1rem;
+        }
+
+        @media (max-width: 600px) {
+        .Txt1 {
+            font-size: 5vw;
+        }
         }
     </style>
-
-    <h1 class="Txt1">
-        TE AMO DOLORES Y MUCHOTE MUCHISIMO
-    </h1>
-    <img src="miamor.png.jpg" alt="IMg1" class="Img1">
-
-</body>
-</html>
+    </head>
+    <body>
+    <img src="miamor.png.jpg" alt="Imagen de amor" class="Img1" />
+    <h1 class="Txt1">TE AMO DOLORES Y MUCHOTE MUCHISIMO</h1>
+    </body>
+    </html>
